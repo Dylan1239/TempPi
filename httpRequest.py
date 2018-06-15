@@ -1,27 +1,23 @@
-#pip install requests
-#pip install json
-
 import requests
 #import json
 
-
-urlPost =  "" 
-
+urlPost ="http://34.239.113.101:8080/demo/temps"
+urlLocal ="http://" 
 
 def postData(json_Data):
-	r=requests.post(urlPostjsonData, json_Data)
+	r = requests.post(urlPost,json= json_Data)
+	print("in Post")
 	if r.status_code == requests.codes.ok:
-		print("ok")
-		print(str(r.status_code))
+		print ("OK")
+		print (str(r.status_code))
 		return r.status_code
-	else: 
-		print("not ok")
+	else:
+		print("Not OK")
 		print(str(r.status_code))
 		return r.status_code
 
+def formatJson(piId,sensorId, dateTime, temperature, humidity):
 
-def formatJson(piId,sensorId,dateTime, temp):
-	
-	json_data = {"deviceId":piId,"sensorId": sensorId,"event_occurred":dateTime,"temp":temp}
-	#print json.dumps(json_data)	
+	json_data = {"DeviceId":piId,"SensorId":sensorId,"EventOccured":str(dateTime),"Temperature":temperature,"Humidity":humidity}
+#	Json.dumps(json_data)
 	return json_data
