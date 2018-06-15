@@ -581,3 +581,32 @@ vim .bashrc
 cd Adafruit_Python_DHT/examples/
 ls
 vim Temp.py 
+cd Adafruit_Python_DHT/examples
+ls
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python Temp.py 
+sudo nano Temp.py 
+python -tt Temp.py 
+sudo nano Temp.py 
+python -tt Temp.py 
+sudo nano Temp.py 
